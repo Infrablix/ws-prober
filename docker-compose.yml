@@ -1,0 +1,8 @@
+services:
+  ws_prober:
+    build: .
+    ports:
+      - "9555:9555"
+    environment:
+      - RUST_LOG=info
+    restart: always

@@ -1,0 +1,17 @@
+[package]
+name = "ws-prober"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.4"
+tokio = { version = "1.0", features = ["full"] }
+tokio-tungstenite = { version = "0.20", features = ["native-tls", "connect"] }
+url = "2.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+native-tls = "0.2"
+
+[[bin]]
+name = "ws-prober"
+path = "src/main.rs"
